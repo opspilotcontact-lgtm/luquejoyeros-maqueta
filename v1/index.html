@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Luque Joyeros · Joyería y relojería en Córdoba desde los años 60 · Distribuidor Oficial Rolex</title>
+<meta name="description" content="Joyería familiar en C/ José Cruz Conde 18, Córdoba. Compromiso, alta joyería, perlas, relojería y servicio técnico. Distribuidor Oficial Rolex y Tudor. Te atendemos sentados y sin prisas.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="../img/favicon.png" type="image/png">
+<link rel="preload" href="../fonts/marcellus-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/source-sans-3-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"JewelryStore","name":"Luque Joyeros","url":"https://luquejoyeros.es/","image":"https://luquejoyeros.es/wp-content/uploads/2020/07/BL1A7882-scaled.jpg","telephone":"+34957472125","email":"info@luquejoyeros.es","address":{"@type":"PostalAddress","streetAddress":"C/ José Cruz Conde, 18","postalCode":"14003","addressLocality":"Córdoba","addressRegion":"Córdoba","addressCountry":"ES"},"geo":{"@type":"GeoCoordinates","latitude":37.8867652,"longitude":-4.7804702},"brand":["Rolex","Tudor","Longines","TAG Heuer","Hamilton","Tissot"]}
+</script>
+<style>
+@font-face{font-family:'Marcellus';src:url(../fonts/marcellus-latin-400-normal.woff2) format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'EB Garamond';src:url(../fonts/eb-garamond-latin-400-italic.woff2) format('woff2');font-style:italic;font-weight:400;font-display:swap}
+@font-face{font-family:'EB Garamond';src:url(../fonts/eb-garamond-latin-500-italic.woff2) format('woff2');font-style:italic;font-weight:500;font-display:swap}
+@font-face{font-family:'Source Sans 3';src:url(../fonts/source-sans-3-var-latin.woff2) format('woff2');font-weight:200 900;font-display:swap}
+:root{
+  --nacar:#F2EDE6; --nacar-2:#E9E2D8; --bandeja:#E4DBCF; --blanco:#FFFFFF;
+  --bronce:#8C7A66; --bronce-7:#6A5A48; --bronce-3:#B8A58C; --tinta:#2B241D; --tinta-2:#3A3128;
+  --rolex:#127749;
+  --display:'Marcellus',Georgia,serif; --voz:'EB Garamond',Georgia,serif; --texto:'Source Sans 3',system-ui,sans-serif;
+  --ease:cubic-bezier(.22,.61,.36,1); --dur:.7s;
+  --ch:clamp(14px,2.4vw,30px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--nacar);color:var(--tinta);font:400 1.0625rem/1.6 var(--texto);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+main{overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+.wrap{max-width:78rem;margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+.ico{width:1.1em;height:1.1em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:focus-visible{outline:2px solid var(--bronce-7);outline-offset:3px}
+
+/* chaflán del monograma: 45° en las cuatro esquinas */
+.chaflan{clip-path:polygon(var(--ch) 0,calc(100% - var(--ch)) 0,100% var(--ch),100% calc(100% - var(--ch)),calc(100% - var(--ch)) 100%,var(--ch) 100%,0 calc(100% - var(--ch)),0 var(--ch))}
+
+/* franja de propuesta */
+.franja{background:var(--tinta);color:var(--nacar);font-size:.8125rem;text-align:center;padding:.45rem 1rem;letter-spacing:.02em}
+.franja a{color:var(--bronce-3)}
+
+/* cabecera */
+.cab{position:sticky;top:0;z-index:40;background:rgb(242 237 230/.94);backdrop-filter:blur(8px);border-bottom:1px solid rgb(140 122 102/.28)}
+.cab .wrap{display:flex;align-items:center;gap:1.5rem;min-height:4.75rem}
+.cab .marca img{width:5.6rem}
+.cab nav{margin-left:auto;display:flex;gap:1.4rem;font-size:.9rem;letter-spacing:.06em;text-transform:uppercase}
+.cab nav a{text-decoration:none;color:var(--bronce-7)}
+.cab nav a:hover{color:var(--tinta)}
+.cab .rolex-hueco{font:600 .62rem/1.15 var(--texto);letter-spacing:.08em;text-transform:uppercase;color:var(--rolex);border:1px dashed var(--rolex);padding:.35rem .5rem;text-align:center;width:5.4rem}
+.btn{display:inline-flex;align-items:center;gap:.55rem;font:600 .95rem/1 var(--texto);letter-spacing:.03em;text-decoration:none;padding:.95rem 1.35rem;border:1px solid var(--bronce-7);transition:background var(--dur) var(--ease),color var(--dur) var(--ease)}
+.btn.chaflan{--ch:10px}
+.btn-lleno{background:var(--bronce-7);color:#fff}
+.btn-lleno:hover{background:var(--tinta);border-color:var(--tinta)}
+.btn-linea{--borde:var(--bronce-7);--fondo:var(--nacar);position:relative;isolation:isolate;border:0;padding:calc(.95rem + 1px) calc(1.35rem + 1px);color:var(--borde)}
+.btn-linea.chaflan{clip-path:none}
+.btn-linea::before,.btn-linea::after{content:'';position:absolute;z-index:-1;clip-path:polygon(var(--ch) 0,calc(100% - var(--ch)) 0,100% var(--ch),100% calc(100% - var(--ch)),calc(100% - var(--ch)) 100%,var(--ch) 100%,0 calc(100% - var(--ch)),0 var(--ch))}
+.btn-linea::before{inset:0;background:var(--borde);z-index:-2}
+.btn-linea::after{inset:1px;--ch:9.6px;background:var(--fondo);transition:background var(--dur) var(--ease)}
+.btn-linea:hover{color:var(--fondo)}
+.btn-linea:hover::after{background:var(--borde)}
+.cab .btn{padding:.7rem 1rem;font-size:.85rem}
+@media (max-width:980px){.cab nav{display:none}.cab .rolex-hueco{margin-left:auto}}
+@media (max-width:520px){.cab .btn span{display:none}.cab .rolex-hueco{width:4.6rem;font-size:.55rem}}
+
+/* portada: la talla */
+.portada{position:relative;padding:clamp(2.5rem,6vw,5rem) 0 clamp(3rem,6vw,5rem);background:
+  radial-gradient(120% 90% at 78% 40%,#F8F4EE 0,rgb(248 244 238/0) 60%),var(--nacar)}
+.portada .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,4rem);align-items:center}
+.ceja{font:600 .78rem/1.3 var(--texto);letter-spacing:.2em;text-transform:uppercase;color:var(--bronce-7);display:flex;align-items:center;gap:.7rem;margin:0 0 1.4rem}
+.ceja::before{content:'';width:1.1rem;height:1.1rem;background:var(--bronce);clip-path:polygon(30% 0,70% 0,100% 30%,100% 70%,70% 100%,30% 100%,0 70%,0 30%);flex:none}
+h1,h2,h3{font-family:var(--display);font-weight:400;letter-spacing:.01em;margin:0}
+.portada h1{font-size:clamp(2.6rem,6.2vw,5.4rem);line-height:1.02;color:var(--tinta);text-wrap:balance}
+.portada h1 em{font-style:normal;color:var(--bronce)}
+.voz{font:italic 400 clamp(1.25rem,2.1vw,1.6rem)/1.35 var(--voz);color:var(--bronce-7);margin:1.4rem 0 0;max-width:34ch}
+.portada .acciones{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.prueba{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;margin:2rem 0 0;padding:1.1rem 0 0;border-top:1px solid rgb(140 122 102/.35);font-size:.92rem;color:var(--bronce-7)}
+.prueba b{color:var(--tinta);font-weight:600}
+.prueba .estrellas{color:var(--bronce);letter-spacing:.1em}
+.talla-caja{position:relative;justify-self:end;width:min(100%,38rem);margin-right:calc(-1 * clamp(1rem,6vw,6rem))}
+.talla{display:block;width:100%;height:auto;overflow:visible}
+.talla .an{transform-box:view-box;transform-origin:50% 50%}
+.talla-pie{position:absolute;left:8%;bottom:-.6rem;font:italic 400 1rem/1.3 var(--voz);color:var(--bronce-7);background:var(--nacar);padding:.2rem .6rem}
+@media (max-width:860px){
+  .portada .wrap{grid-template-columns:1fr}
+  .talla-caja{order:-1;justify-self:center;width:min(78vw,26rem);margin:0}
+}
+
+/* banda Rolex (espacio oficial reservado) */
+.rolex{background:var(--rolex);color:#fff}
+.rolex .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr) minmax(0,1.1fr);gap:1rem;padding-top:1.6rem;padding-bottom:1.6rem;align-items:stretch}
+.rolex .hueco{border:1px dashed rgb(255 255 255/.55);min-height:9rem;display:grid;place-items:center;text-align:center;padding:1rem;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:rgb(255 255 255/.85)}
+.rolex .txt{align-self:center;font-size:.95rem}
+.rolex .txt strong{display:block;font:400 1.35rem/1.2 Georgia,serif;letter-spacing:.02em;margin-bottom:.35rem}
+.rolex .txt a{color:#fff}
+@media (max-width:760px){.rolex .wrap{grid-template-columns:1fr 1fr}.rolex .txt{grid-column:1/-1}}
+
+/* títulos de bloque: la pregunta del cliente */
+.bloque{padding:clamp(4rem,9vw,7.5rem) 0}
+.cabeza{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:1rem 3rem;align-items:end;margin-bottom:clamp(2rem,4vw,3.25rem)}
+.cabeza h2{font-size:clamp(2rem,4.4vw,3.4rem);line-height:1.05;text-wrap:balance}
+.cabeza .voz{margin:0;max-width:38ch}
+@media (max-width:760px){.cabeza{grid-template-columns:1fr}}
+
+/* las bandejas, en la mesa */
+.mesa{background:var(--nacar-2);background-image:repeating-linear-gradient(90deg,rgb(106 90 72/.035) 0 1px,transparent 1px 7px)}
+.bandejas{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(1rem,2vw,1.6rem)}
+.bandeja{--ch:22px;position:relative;grid-column:span 2;background:var(--bandeja);padding:clamp(.9rem,1.6vw,1.2rem) clamp(.9rem,1.6vw,1.2rem) calc(clamp(.9rem,1.6vw,1.2rem) + 14px);display:flex;flex-direction:column;box-shadow:inset 0 0 0 1px rgb(106 90 72/.25),inset 0 0 0 7px var(--bandeja),inset 0 0 0 8px rgb(106 90 72/.18)}
+.bandeja.ancha{grid-column:span 4;flex-direction:row;gap:clamp(1rem,2.5vw,2rem);align-items:center}
+.bandeja.ancha .hueco-pieza{flex:0 0 52%}
+.bandeja.media{grid-column:span 3}
+.bandeja.entera{grid-column:1/-1}
+.bandeja.entera .hueco-pieza{flex:0 0 34%;aspect-ratio:16/9}
+.hueco-pieza{--ch:26px;background:#fff;aspect-ratio:4/3;display:grid;place-items:center;overflow:hidden;box-shadow:inset 0 2px 10px rgb(43 36 29/.08)}
+.hueco-pieza img{width:100%;height:100%;object-fit:contain;padding:6%}
+.hueco-pieza.foto img{object-fit:cover;padding:0}
+.bandeja h3{font-size:1.55rem;line-height:1.1;margin:1.1rem 0 .7rem;color:var(--tinta)}
+.bandeja.ancha h3{margin-top:0;font-size:clamp(1.7rem,2.6vw,2.2rem)}
+.bandeja dl{margin:0;display:grid;gap:.55rem;font-size:.97rem}
+.bandeja dt{font:600 .7rem/1.2 var(--texto);letter-spacing:.16em;text-transform:uppercase;color:var(--bronce-7)}
+.bandeja dd{margin:0}
+.bandeja dd q{font:italic 400 1.1rem/1.3 var(--voz);quotes:'«' '»'}
+.bandeja .mas{margin-top:auto;padding-top:1rem;font-weight:600;font-size:.92rem;color:var(--bronce-7);text-decoration:none;display:inline-flex;gap:.4rem;align-items:center}
+.bandeja .mas:hover{color:var(--tinta)}
+.sello-taller{height:78%;width:auto;aspect-ratio:1;color:var(--bronce)}
+@media (max-width:980px){.bandeja,.bandeja.media{grid-column:span 3}
+.bandeja.entera{grid-column:1/-1}
+.bandeja.entera .hueco-pieza{flex:0 0 34%;aspect-ratio:16/9}.bandeja.ancha{grid-column:1/-1}}
+@media (max-width:620px){.bandejas{grid-template-columns:1fr}.bandeja,.bandeja.media,.bandeja.ancha{grid-column:1/-1}.bandeja.ancha{flex-direction:column;align-items:stretch}}
+
+/* sin prisas */
+.atencion .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.atencion .foto{--ch:clamp(22px,3.5vw,44px)}
+.atencion .foto img{width:100%;aspect-ratio:4/3.1;object-fit:cover}
+.atencion h2{font-size:clamp(2rem,4.2vw,3.2rem);line-height:1.05}
+.atencion .respuesta{font:italic 400 clamp(1.3rem,2.2vw,1.7rem)/1.3 var(--voz);color:var(--bronce-7);margin:1rem 0 1.6rem}
+.dichos{list-style:none;margin:0;padding:0;border-top:1px solid rgb(140 122 102/.35)}
+.dichos li{display:grid;grid-template-columns:1.1rem minmax(0,1fr);gap:.9rem;padding:.85rem 0;border-bottom:1px solid rgb(140 122 102/.35)}
+.dichos li::before{content:'';width:.8rem;height:.8rem;margin-top:.45rem;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0,#EFE7DC 35%,#C9B9A4 100%);box-shadow:0 1px 2px rgb(43 36 29/.25)}
+.dichos q{font:italic 400 1.2rem/1.3 var(--voz);quotes:'«' '»'}
+.dichos small{display:block;font-size:.8rem;color:var(--bronce-7);margin-top:.15rem}
+@media (max-width:860px){.atencion .wrap{grid-template-columns:1fr}}
+
+/* el hilo de perlas */
+.hilo-sec{background:var(--nacar)}
+.hilo{position:relative;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem;padding-top:3.2rem;margin:0;list-style:none}
+.hilo::before{content:'';position:absolute;left:0;right:0;top:1.35rem;height:1px;background:linear-gradient(90deg,transparent,var(--bronce) 6%,var(--bronce) 94%,transparent)}
+.hilo li{position:relative}
+.hilo li::before{content:'';position:absolute;top:-2.95rem;left:0;width:2.6rem;height:2.6rem;border-radius:50%;background:radial-gradient(circle at 34% 30%,#fff 0,#F6F0E8 22%,#E3D8CA 58%,#B9A690 100%);box-shadow:0 3px 8px rgb(43 36 29/.18),inset -3px -4px 8px rgb(106 90 72/.18)}
+.hilo li.bronce::before{background:radial-gradient(circle at 34% 30%,#E8C9B2 0,#9C6B55 40%,#5B3A2E 100%)}
+.hilo .cuando{font:400 1.45rem/1.15 var(--display);color:var(--tinta);display:block;margin-bottom:.5rem}
+.hilo p{margin:0;max-width:34ch}
+.hilo .pend{display:inline-block;font-size:.78rem;color:var(--bronce-7);border:1px dashed var(--bronce);padding:.1rem .45rem;margin-top:.5rem}
+.origen{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1fr);gap:clamp(1.5rem,4vw,3.5rem);align-items:center;margin-top:clamp(3rem,6vw,4.5rem)}
+.origen .hueco-pieza{--ch:30px;aspect-ratio:1}
+.origen blockquote{margin:0;font:italic 400 clamp(1.35rem,2.4vw,1.9rem)/1.35 var(--voz);color:var(--tinta)}
+.origen cite{display:block;margin-top:1rem;font:600 .78rem/1.3 var(--texto);font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:var(--bronce-7)}
+@media (max-width:760px){.hilo{grid-template-columns:1fr;padding-top:0;padding-left:3.8rem;gap:2.2rem}.hilo::before{left:1.3rem;right:auto;top:0;bottom:0;width:1px;height:auto;background:linear-gradient(180deg,transparent,var(--bronce) 4%,var(--bronce) 96%,transparent)}.hilo li::before{top:-.2rem;left:-3.8rem}.origen{grid-template-columns:1fr}}
+
+/* lo que dicen: tinta */
+.dicen{background:var(--tinta);color:var(--nacar)}
+.dicen .ceja{color:var(--bronce-3)}
+.dicen .ceja::before{background:var(--bronce-3)}
+.dicen .grande{font:400 clamp(2.1rem,5vw,4rem)/1.08 var(--display);max-width:22ch;margin:0;quotes:'«' '»'}
+.dicen .grande + p{margin:1.2rem 0 0;color:var(--bronce-3);font-size:.95rem}
+.resenas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:clamp(2.5rem,5vw,4rem);border-top:1px solid rgb(184 165 140/.35)}
+.resenas figure{margin:0;padding:1.6rem 1.6rem 0 0}
+.resenas figure + figure{padding-left:1.6rem;border-left:1px solid rgb(184 165 140/.35)}
+.resenas blockquote{margin:0;font:italic 400 1.22rem/1.4 var(--voz);color:#F7F2EB}
+.resenas figcaption{margin-top:.8rem;font-size:.82rem;color:var(--bronce-3)}
+.nota-g{margin-top:2.2rem;font-size:.85rem;color:var(--bronce-3);display:flex;gap:.5rem;align-items:center}
+@media (max-width:860px){.resenas{grid-template-columns:1fr}.resenas figure,.resenas figure + figure{padding:1.4rem 0;border-left:0;border-bottom:1px solid rgb(184 165 140/.35)}}
+
+/* dónde */
+.donde .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4.5rem);align-items:center}
+.donde .foto{--ch:clamp(22px,3.5vw,44px)}
+.donde .foto img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.datos{list-style:none;margin:1.8rem 0 2rem;padding:0;display:grid;gap:1rem}
+.datos li{display:grid;grid-template-columns:1.4rem minmax(0,1fr);gap:.8rem}
+.datos .ico{color:var(--bronce-7);width:1.3rem;height:1.3rem;margin-top:.15rem}
+.datos b{font-weight:600}
+.datos .pend{font-size:.8rem;color:var(--bronce-7)}
+@media (max-width:860px){.donde .wrap{grid-template-columns:1fr}}
+
+/* cierre: la talla en silueta */
+.cierre{position:relative;background:var(--bronce-7);color:#fff;overflow:hidden;padding:clamp(4.5rem,10vw,8rem) 0}
+.cierre .silueta{position:absolute;right:-6%;top:50%;width:min(62vw,40rem);transform:translateY(-50%);opacity:.16;pointer-events:none}
+.cierre .silueta path{fill:none;stroke:#fff;stroke-width:2}
+.cierre .wrap{position:relative}
+.cierre h2{font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.02;max-width:14ch}
+.cierre .voz{color:#F2EDE6}
+.cierre .acciones{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.cierre .btn-lleno{background:#fff;color:var(--bronce-7);border-color:#fff}
+.cierre .btn-lleno:hover{background:var(--tinta);color:#fff;border-color:var(--tinta)}
+.cierre .btn-linea{--borde:#fff;--fondo:var(--bronce-7)}
+
+/* pie */
+.pie{background:var(--tinta);color:var(--bronce-3);font-size:.9rem;padding:3.5rem 0 2rem}
+.pie .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:2rem}
+.pie .logo-b{width:7rem;aspect-ratio:200/130;background:var(--nacar);-webkit-mask:url(../img/logo.png) left center/contain no-repeat;mask:url(../img/logo.png) left center/contain no-repeat}
+.pie h3{font:600 .72rem/1.2 var(--texto);letter-spacing:.18em;text-transform:uppercase;color:var(--nacar);margin:0 0 .8rem}
+.pie ul{list-style:none;margin:0;padding:0;display:grid;gap:.45rem}
+.pie a{text-decoration:none}.pie a:hover{color:#fff}
+.pie .legal{grid-column:1/-1;border-top:1px solid rgb(184 165 140/.25);padding-top:1.4rem;font-size:.8rem;display:flex;flex-wrap:wrap;gap:.5rem 1.4rem}
+@media (max-width:860px){.pie .wrap{grid-template-columns:1fr 1fr}}
+
+/* movimiento: una curva, una duración */
+@media (prefers-reduced-motion:no-preference){
+  @supports (animation-timeline:view()){
+    .revela{animation:sube linear both;animation-timeline:view();animation-range:entry 0% cover 24%}
+    @keyframes sube{from{opacity:0;transform:translateY(1.2rem)}to{opacity:1;transform:none}}
+  }
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-fle" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+</svg>
+
+<div class="franja">Propuesta de rediseño en revisión · la web oficial sigue en <a href="https://luquejoyeros.es/">luquejoyeros.es</a> · textos y datos a validar con la casa</div>
+
+<header class="cab">
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="Luque Joyeros, inicio"><img src="../img/logo.png" width="200" height="130" alt="Luque Joyeros"></a>
+    <nav aria-label="Principal">
+      <a href="#mesa">Joyería</a>
+      <a href="#mesa">Compromiso</a>
+      <a href="#historia">Perlas</a>
+      <a href="#mesa">Relojería</a>
+      <a href="#rolex">Rolex</a>
+      <a href="#donde">Visítanos</a>
+    </nav>
+    <span class="rolex-hueco" title="Aquí va el reloj oficial de Rolex, que enlaza a la sección Rolex">Reloj oficial Rolex</span>
+    <a class="btn btn-lleno chaflan" href="https://wa.me/34683153816?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20cita%20en%20la%20joyer%C3%ADa" aria-label="Pedir cita por WhatsApp"><svg class="ico"><use href="#i-msg"/></svg><span>Pedir cita</span></a>
+  </div>
+</header>
+
+<main id="inicio">
+<section class="portada" aria-labelledby="t-portada">
+  <div class="wrap">
+    <div>
+      <p class="ceja">Joyería familiar · Cruz Conde 18 · Córdoba</p>
+      <h1 id="t-portada">Nada es impersonal ni se deja <em>al azar.</em></h1>
+      <p class="voz">Desde que D. Rafael Luque importaba perlas, a principios de los 60, en esta casa cada pieza se elige sentado, con tiempo y con alguien que te conoce por tu nombre.</p>
+      <div class="acciones">
+        <a class="btn btn-lleno chaflan" href="https://wa.me/34683153816?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20cita%20en%20la%20joyer%C3%ADa"><svg class="ico"><use href="#i-msg"/></svg>Pedir cita por WhatsApp</a>
+        <a class="btn btn-linea chaflan" href="tel:+34957472125"><svg class="ico"><use href="#i-tel"/></svg>957 472 125</a>
+      </div>
+      <p class="prueba"><span><span class="estrellas" role="img" aria-label="4,9 de 5 estrellas">★★★★★</span> <b>4,9</b> en 220 reseñas de Google</span><span><b>Distribuidor Oficial</b> Rolex y Tudor</span></p>
+    </div>
+    <div class="talla-caja">
+      <svg class="talla" viewBox="-4 -4 808 968" role="img" aria-label="El monograma LJ de Luque Joyeros como la tabla de una talla esmeralda">
+<defs><clipPath id="filetin"><path d="M150.0 0.0L650.0 0.0L800.0 150.0L800.0 810.0L650.0 960.0L150.0 960.0L0.0 810.0L0.0 150.0Z"/></clipPath>
+<linearGradient id="brillo" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".75"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+<g class="facetas" fill="#8C7A66"><g class="an" style="--i:0"><path d="M150.0 0.0L650.0 0.0L627.1 34.2L172.9 34.2Z" fill-opacity="0.050"/><path d="M650.0 0.0L800.0 150.0L765.8 172.9L627.1 34.2Z" fill-opacity="0.100"/><path d="M800.0 150.0L800.0 810.0L765.8 787.1L765.8 172.9Z" fill-opacity="0.160"/><path d="M800.0 810.0L650.0 960.0L627.1 925.8L765.8 787.1Z" fill-opacity="0.240"/><path d="M650.0 960.0L150.0 960.0L172.9 925.8L627.1 925.8Z" fill-opacity="0.200"/><path d="M150.0 960.0L0.0 810.0L34.2 787.1L172.9 925.8Z" fill-opacity="0.130"/><path d="M0.0 810.0L0.0 150.0L34.2 172.9L34.2 787.1Z" fill-opacity="0.070"/><path d="M0.0 150.0L150.0 0.0L172.9 34.2L34.2 172.9Z" fill-opacity="0.020"/></g><g class="an" style="--i:1"><path d="M172.9 34.2L627.1 34.2L604.2 68.3L195.8 68.3Z" fill-opacity="0.085"/><path d="M627.1 34.2L765.8 172.9L731.7 195.8L604.2 68.3Z" fill-opacity="0.135"/><path d="M765.8 172.9L765.8 787.1L731.7 764.2L731.7 195.8Z" fill-opacity="0.195"/><path d="M765.8 787.1L627.1 925.8L604.2 891.7L731.7 764.2Z" fill-opacity="0.275"/><path d="M627.1 925.8L172.9 925.8L195.8 891.7L604.2 891.7Z" fill-opacity="0.235"/><path d="M172.9 925.8L34.2 787.1L68.3 764.2L195.8 891.7Z" fill-opacity="0.165"/><path d="M34.2 787.1L34.2 172.9L68.3 195.8L68.3 764.2Z" fill-opacity="0.105"/><path d="M34.2 172.9L172.9 34.2L195.8 68.3L68.3 195.8Z" fill-opacity="0.055"/></g><g class="an" style="--i:2"><path d="M195.8 68.3L604.2 68.3L581.2 102.5L218.8 102.5Z" fill-opacity="0.050"/><path d="M604.2 68.3L731.7 195.8L697.5 218.8L581.2 102.5Z" fill-opacity="0.100"/><path d="M731.7 195.8L731.7 764.2L697.5 741.2L697.5 218.8Z" fill-opacity="0.160"/><path d="M731.7 764.2L604.2 891.7L581.2 857.5L697.5 741.2Z" fill-opacity="0.240"/><path d="M604.2 891.7L195.8 891.7L218.8 857.5L581.2 857.5Z" fill-opacity="0.200"/><path d="M195.8 891.7L68.3 764.2L102.5 741.2L218.8 857.5Z" fill-opacity="0.130"/><path d="M68.3 764.2L68.3 195.8L102.5 218.8L102.5 741.2Z" fill-opacity="0.070"/><path d="M68.3 195.8L195.8 68.3L218.8 102.5L102.5 218.8Z" fill-opacity="0.020"/></g><g class="an" style="--i:3"><path d="M218.8 102.5L581.2 102.5L558.3 136.7L241.7 136.7Z" fill-opacity="0.085"/><path d="M581.2 102.5L697.5 218.8L663.3 241.7L558.3 136.7Z" fill-opacity="0.135"/><path d="M697.5 218.8L697.5 741.2L663.3 718.3L663.3 241.7Z" fill-opacity="0.195"/><path d="M697.5 741.2L581.2 857.5L558.3 823.3L663.3 718.3Z" fill-opacity="0.275"/><path d="M581.2 857.5L218.8 857.5L241.7 823.3L558.3 823.3Z" fill-opacity="0.235"/><path d="M218.8 857.5L102.5 741.2L136.7 718.3L241.7 823.3Z" fill-opacity="0.165"/><path d="M102.5 741.2L102.5 218.8L136.7 241.7L136.7 718.3Z" fill-opacity="0.105"/><path d="M102.5 218.8L218.8 102.5L241.7 136.7L136.7 241.7Z" fill-opacity="0.055"/></g><g class="an" style="--i:4"><path d="M241.7 136.7L558.3 136.7L535.4 170.8L264.6 170.8Z" fill-opacity="0.050"/><path d="M558.3 136.7L663.3 241.7L629.2 264.6L535.4 170.8Z" fill-opacity="0.100"/><path d="M663.3 241.7L663.3 718.3L629.2 695.4L629.2 264.6Z" fill-opacity="0.160"/><path d="M663.3 718.3L558.3 823.3L535.4 789.2L629.2 695.4Z" fill-opacity="0.240"/><path d="M558.3 823.3L241.7 823.3L264.6 789.2L535.4 789.2Z" fill-opacity="0.200"/><path d="M241.7 823.3L136.7 718.3L170.8 695.4L264.6 789.2Z" fill-opacity="0.130"/><path d="M136.7 718.3L136.7 241.7L170.8 264.6L170.8 695.4Z" fill-opacity="0.070"/><path d="M136.7 241.7L241.7 136.7L264.6 170.8L170.8 264.6Z" fill-opacity="0.020"/></g><g class="an" style="--i:5"><path d="M264.6 170.8L535.4 170.8L512.5 205.0L287.5 205.0Z" fill-opacity="0.085"/><path d="M535.4 170.8L629.2 264.6L595.0 287.5L512.5 205.0Z" fill-opacity="0.135"/><path d="M629.2 264.6L629.2 695.4L595.0 672.5L595.0 287.5Z" fill-opacity="0.195"/><path d="M629.2 695.4L535.4 789.2L512.5 755.0L595.0 672.5Z" fill-opacity="0.275"/><path d="M535.4 789.2L264.6 789.2L287.5 755.0L512.5 755.0Z" fill-opacity="0.235"/><path d="M264.6 789.2L170.8 695.4L205.0 672.5L287.5 755.0Z" fill-opacity="0.165"/><path d="M170.8 695.4L170.8 264.6L205.0 287.5L205.0 672.5Z" fill-opacity="0.105"/><path d="M170.8 264.6L264.6 170.8L287.5 205.0L205.0 287.5Z" fill-opacity="0.055"/></g></g>
+<g class="aristas an" style="--i:6" fill="none" stroke="#8C7A66" stroke-width="1.3" vector-effect="non-scaling-stroke"><path d="M150.0 0.0L650.0 0.0L800.0 150.0L800.0 810.0L650.0 960.0L150.0 960.0L0.0 810.0L0.0 150.0Z"/><path d="M172.9 34.2L627.1 34.2L765.8 172.9L765.8 787.1L627.1 925.8L172.9 925.8L34.2 787.1L34.2 172.9Z"/><path d="M195.8 68.3L604.2 68.3L731.7 195.8L731.7 764.2L604.2 891.7L195.8 891.7L68.3 764.2L68.3 195.8Z"/><path d="M218.8 102.5L581.2 102.5L697.5 218.8L697.5 741.2L581.2 857.5L218.8 857.5L102.5 741.2L102.5 218.8Z"/><path d="M241.7 136.7L558.3 136.7L663.3 241.7L663.3 718.3L558.3 823.3L241.7 823.3L136.7 718.3L136.7 241.7Z"/><path d="M264.6 170.8L535.4 170.8L629.2 264.6L629.2 695.4L535.4 789.2L264.6 789.2L170.8 695.4L170.8 264.6Z"/><path d="M287.5 205.0L512.5 205.0L595.0 287.5L595.0 672.5L512.5 755.0L287.5 755.0L205.0 672.5L205.0 287.5Z"/><path d="M150.0 0.0L287.5 205.0"/><path d="M650.0 0.0L512.5 205.0"/><path d="M800.0 150.0L595.0 287.5"/><path d="M800.0 810.0L595.0 672.5"/><path d="M650.0 960.0L512.5 755.0"/><path d="M150.0 960.0L287.5 755.0"/><path d="M0.0 810.0L205.0 672.5"/><path d="M0.0 150.0L205.0 287.5"/></g>
+<g class="mono an" style="--i:7" fill="#6A5A48"><svg class="mono-talla" x="279.1" y="359.1" width="241.8" height="241.8" viewBox="0 0 90 90"><g transform="translate(0 90) scale(.1 -.1)"><path d="M157 812 l-47 -48 0 -300 0 -299 78 -78 77 -77 171 0 170 0 52 53 c29 29 52 56 52 60 0 4 -94 7 -208 7 l-208 0 -37 38 -37 38 0 327 c0 180 -4 327 -8 327 -4 0 -29 -22 -55 -48z"/><path d="M280 822 c0 -4 24 -31 53 -60 l53 -52 152 0 152 0 0 -158 0 -158 -43 -42 -43 -42 -112 0 -112 0 0 95 0 95 -50 0 -50 0 0 -118 0 -118 38 -37 38 -37 155 0 155 0 67 68 67 68 0 224 0 224 -27 28 -27 28 -233 0 c-128 0 -233 -4 -233 -8z m482 -39 l28 -27 0 -205 0 -205 -67 -68 -67 -68 -145 0 -145 0 -33 32 -33 32 0 103 0 103 30 0 30 0 0 -95 0 -95 132 0 132 0 38 37 38 37 0 183 0 183 -148 0 -148 0 -39 40 -39 40 204 0 204 0 28 -27z"/></g></svg></g>
+<g clip-path="url(#filetin)"><g transform="rotate(18 400.0 480.0)"><rect class="destello" x="-260" y="-100" width="220" height="1160" fill="url(#brillo)"/></g></g>
+</svg>
+      <span class="talla-pie" aria-hidden="true">el monograma de la casa, tallado</span>
+    </div>
+  </div>
+</section>
+
+<section class="rolex" id="rolex" aria-label="Rolex en Luque Joyeros">
+  <div class="wrap">
+    <div class="hueco">Espacio oficial Rolex<br>banner 1 · material de Rolex</div>
+    <div class="hueco">Espacio oficial Rolex<br>banner 2 · material de Rolex</div>
+    <p class="txt"><strong>Distribuidor Oficial Rolex en Córdoba</strong>La sección Rolex conserva el diseño y los contenidos oficiales de la marca. <a href="https://luquejoyeros.es/rolex/">Descubra Rolex en Luque</a></p>
+  </div>
+</section>
+
+<section class="bloque mesa" id="mesa" aria-labelledby="t-mesa">
+  <div class="wrap">
+    <div class="cabeza revela">
+      <div><p class="ceja">En la mesa</p><h2 id="t-mesa">¿Qué vienes a buscar?</h2></div>
+      <p class="voz">Siéntate. Te traemos las piezas a la mesa, una bandeja cada vez, y no hay prisa por decidir.</p>
+    </div>
+    <div class="bandejas">
+      <article class="bandeja ancha chaflan revela">
+        <div class="hueco-pieza chaflan"><img src="../img/compromiso.webp" width="900" height="788" alt="Tres anillos de compromiso de Luque Joyeros: talla oval, esmeralda y corazón" loading="lazy"></div>
+        <div>
+          <h3>Compromiso y alianzas</h3>
+          <dl>
+            <div><dt>Vienes con</dt><dd><q>Quiero que sea para siempre y no sé por dónde empezar.</q></dd></div>
+            <div><dt>En la mesa</dt><dd>Te enseñamos tallas y monturas con calma, y diseñas tu alianza con nosotros.</dd></div>
+            <div><dt>Te llevas</dt><dd>Tu anillo, ajustado a tu medida.</dd></div>
+          </dl>
+          <a class="mas" href="https://luquejoyeros.es/compromiso/">Ver anillos de compromiso <svg class="ico"><use href="#i-fle"/></svg></a>
+        </div>
+      </article>
+      <article class="bandeja chaflan revela">
+        <div class="hueco-pieza chaflan"><img src="../img/esmeralda.webp" width="566" height="864" alt="Pendientes largos de diamantes en talla esmeralda" loading="lazy"></div>
+        <h3>Alta joyería</h3>
+        <dl>
+          <div><dt>En la mesa</dt><dd>Piezas elaboradas artesanalmente desde el diseño inicial hasta su fabricación.</dd></div>
+          <div><dt>Te llevas</dt><dd>Una joya que llevabas años soñando tener.</dd></div>
+        </dl>
+        <a class="mas" href="https://luquejoyeros.es/">Ver joyería <svg class="ico"><use href="#i-fle"/></svg></a>
+      </article>
+      <article class="bandeja media chaflan revela">
+        <div class="hueco-pieza chaflan"><img src="../img/perla.webp" width="600" height="600" alt="Collar de oro rosa con una perla bronce" loading="lazy"></div>
+        <h3>Perlas</h3>
+        <dl>
+          <div><dt>Por qué aquí</dt><dd>Aquí empezó todo: D. Rafael importaba perlas de los mejores cultivadores.</dd></div>
+          <div><dt>En la mesa</dt><dd>Te enseñamos a distinguir una perla por su brillo, su forma y su color.</dd></div>
+        </dl>
+        <a class="mas" href="#historia">La historia de la casa <svg class="ico"><use href="#i-fle"/></svg></a>
+      </article>
+      <article class="bandeja media chaflan revela">
+        <div class="hueco-pieza foto chaflan"><img src="../img/mesas.webp" width="1400" height="886" alt="Mesas de atención de Luque Joyeros, con la escalera y las vitrinas de relojería" loading="lazy"></div>
+        <h3>Relojería</h3>
+        <dl>
+          <div><dt>Marcas oficiales</dt><dd>Rolex, Tudor, Longines, TAG Heuer, Hamilton y Tissot.</dd></div>
+          <div><dt>En la mesa</dt><dd>Si te gusta uno, te lo reservamos sin compromiso hasta el día siguiente.</dd></div>
+        </dl>
+        <a class="mas" href="https://luquejoyeros.es/relojeria/">Ver relojería <svg class="ico"><use href="#i-fle"/></svg></a>
+      </article>
+      <article class="bandeja ancha entera chaflan revela">
+        <div class="hueco-pieza chaflan" style="background:var(--nacar)"><svg class="sello-taller" viewBox="0 0 90 90" role="img" aria-label="Monograma de Luque Joyeros"><g transform="translate(0 90) scale(.1 -.1)" fill="currentColor"><path d="M157 812 l-47 -48 0 -300 0 -299 78 -78 77 -77 171 0 170 0 52 53 c29 29 52 56 52 60 0 4 -94 7 -208 7 l-208 0 -37 38 -37 38 0 327 c0 180 -4 327 -8 327 -4 0 -29 -22 -55 -48z"/><path d="M280 822 c0 -4 24 -31 53 -60 l53 -52 152 0 152 0 0 -158 0 -158 -43 -42 -43 -42 -112 0 -112 0 0 95 0 95 -50 0 -50 0 0 -118 0 -118 38 -37 38 -37 155 0 155 0 67 68 67 68 0 224 0 224 -27 28 -27 28 -233 0 c-128 0 -233 -4 -233 -8z m482 -39 l28 -27 0 -205 0 -205 -67 -68 -67 -68 -145 0 -145 0 -33 32 -33 32 0 103 0 103 30 0 30 0 0 -95 0 -95 132 0 132 0 38 37 38 37 0 183 0 183 -148 0 -148 0 -39 40 -39 40 204 0 204 0 28 -27z"/></g></svg></div>
+        <div>
+          <h3>Taller y servicio técnico</h3>
+          <dl>
+            <div><dt>Vienes con</dt><dd><q>El reloj de mi padre ya no va como antes.</q></dd></div>
+            <div><dt>En la mesa</dt><dd>Lo revisan relojeros formados por Rolex. Te decimos qué necesita antes de tocarlo.</dd></div>
+            <div><dt>Te llevas</dt><dd>Tu reloj o tu joya, cuidados en su casa oficial.</dd></div>
+          </dl>
+          <a class="mas" href="https://luquejoyeros.es/servicio-tecnico/">Servicio técnico <svg class="ico"><use href="#i-fle"/></svg></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="bloque atencion" aria-labelledby="t-atencion">
+  <div class="wrap">
+    <div class="foto chaflan revela"><img src="../img/interior-800.webp" srcset="../img/interior-800.webp 800w, ../img/interior.webp 1600w" sizes="(max-width:860px) 100vw, 55vw" width="1600" height="990" alt="Interior de Luque Joyeros: vitrinas, mesas de atención y butacas" loading="lazy"></div>
+    <div class="revela">
+      <p class="ceja">Sin prisas</p>
+      <h2 id="t-atencion">¿Quién me va a atender?</h2>
+      <p class="respuesta">Una persona con nombre, que se sienta contigo.</p>
+      <ul class="dichos">
+        <li><div><q>La atención sin prisas, su gran experiencia y, sobre todo, el cariño y la cercanía.</q><small>Juan Antonio Moyano · Google</small></div></li>
+        <li><div><q>Sin presiones, sabiendo escuchar y atender nuestras necesidades.</q><small>Gema Estepa Almena · Google</small></div></li>
+        <li><div><q>Nos ofrecieron unas copas de Moët Chandon para brindar por tan maravilloso momento.</q><small>Luis Noales, que vino desde Huelva · Google</small></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="bloque hilo-sec" id="historia" aria-labelledby="t-historia">
+  <div class="wrap">
+    <div class="cabeza revela">
+      <div><p class="ceja">La casa</p><h2 id="t-historia">¿Desde cuándo?</h2></div>
+      <p class="voz">Desde principios de los 60. La historia de Luque se cuenta como se enhebra un collar: perla a perla.</p>
+    </div>
+    <ol class="hilo revela">
+      <li class="bronce"><span class="cuando">Principios de los 60</span><p>D. Rafael Luque Rodríguez empieza como importador de perlas, en colaboración con los mejores cultivadores.</p></li>
+      <li><span class="cuando">Cruz Conde 18</span><p>La joyería abre en el centro de Córdoba. Joyería propia, relojería y taller en la misma casa.</p><span class="pend">año · a confirmar con la familia</span></li>
+      <li><span class="cuando">Hoy</span><p>Distribuidor Oficial Rolex y Tudor, y la misma manera de atender: nada impersonal, nada al azar.</p></li>
+    </ol>
+    <div class="origen revela">
+      <div class="hueco-pieza chaflan"><img src="../img/pera.webp" width="900" height="900" alt="Pendientes de diamantes en forma de pera con halo" loading="lazy"></div>
+      <blockquote>«El esfuerzo, cariño y pasión por la perfección están reflejados en cada detalle.»<cite>Luque Joyeros</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="bloque dicen" aria-labelledby="t-dicen">
+  <div class="wrap">
+    <p class="ceja">Lo que dicen de la casa</p>
+    <h2 id="t-dicen" class="grande revela"><q>Allí las joyas brillan de una manera especial.</q></h2>
+    <p>Oscar Reyes · Google</p>
+    <div class="resenas revela">
+      <figure><blockquote>«Llegué a Luque Joyeros con la ilusión de encontrar una joya que llevaba muchos años soñando tener, y no solo la encontré…»</blockquote><figcaption>elquesuspira · Google</figcaption></figure>
+      <figure><blockquote>«Íbamos con la idea de un reloj, y gracias a la profesionalidad y el encanto de Mar, salimos con uno muy superior.»</blockquote><figcaption>Gema Estepa Almena · Google</figcaption></figure>
+      <figure><blockquote>«El trato que nos ha dado Mar ha sido magnífico, nos hizo sentir como en casa.»</blockquote><figcaption>Antonio Cepas Muñoz · Google</figcaption></figure>
+    </div>
+    <p class="nota-g"><span class="estrellas" role="img" aria-label="4,9 de 5 estrellas">★★★★★</span> 4,9 en 220 reseñas de Google · consultado el 30-sep-2026</p>
+  </div>
+</section>
+
+<section class="bloque donde" id="donde" aria-labelledby="t-donde">
+  <div class="wrap">
+    <div class="foto chaflan revela"><img src="../img/fachada-800.webp" srcset="../img/fachada-800.webp 800w, ../img/fachada.webp 1600w" sizes="(max-width:860px) 100vw, 50vw" width="1600" height="1034" alt="Fachada de Luque Joyeros en la calle José Cruz Conde 18, Córdoba" loading="lazy"></div>
+    <div class="revela">
+      <p class="ceja">Visítanos</p>
+      <h2 id="t-donde" class="cabeza-h">¿Dónde estáis?</h2>
+      <ul class="datos">
+        <li><svg class="ico"><use href="#i-pin"/></svg><div><b>C/ José Cruz Conde, 18</b><br>14003 Córdoba · en pleno centro, a un paso de Las Tendillas</div></li>
+        <li><svg class="ico"><use href="#i-reloj"/></svg><div>Lunes a viernes · 10:00–13:30 y 17:30–20:30<br><span class="pend">Horario de su web de contacto; hay tres versiones publicadas, está pendiente de confirmar</span></div></li>
+        <li><svg class="ico"><use href="#i-tel"/></svg><div><a href="tel:+34957472125">957 472 125</a> · <a href="tel:+34957478487">957 478 487</a></div></li>
+        <li><svg class="ico"><use href="#i-msg"/></svg><div>WhatsApp <a href="https://wa.me/34683153816">683 153 816</a> · <a href="mailto:info@luquejoyeros.es">info@luquejoyeros.es</a></div></li>
+      </ul>
+      <a class="btn btn-linea chaflan" href="https://www.google.com/maps/search/?api=1&amp;query=Luque+Joyeros+Cruz+Conde+18+C%C3%B3rdoba"><svg class="ico"><use href="#i-pin"/></svg>Cómo llegar</a>
+    </div>
+  </div>
+</section>
+
+<section class="cierre" aria-labelledby="t-cierre">
+  <svg class="silueta" viewBox="-4 -4 808 968" aria-hidden="true"><path d="M150.0 0.0L650.0 0.0L800.0 150.0L800.0 810.0L650.0 960.0L150.0 960.0L0.0 810.0L0.0 150.0Z"/><path d="M172.9 34.2L627.1 34.2L765.8 172.9L765.8 787.1L627.1 925.8L172.9 925.8L34.2 787.1L34.2 172.9Z"/><path d="M195.8 68.3L604.2 68.3L731.7 195.8L731.7 764.2L604.2 891.7L195.8 891.7L68.3 764.2L68.3 195.8Z"/><path d="M218.8 102.5L581.2 102.5L697.5 218.8L697.5 741.2L581.2 857.5L218.8 857.5L102.5 741.2L102.5 218.8Z"/><path d="M241.7 136.7L558.3 136.7L663.3 241.7L663.3 718.3L558.3 823.3L241.7 823.3L136.7 718.3L136.7 241.7Z"/><path d="M264.6 170.8L535.4 170.8L629.2 264.6L629.2 695.4L535.4 789.2L264.6 789.2L170.8 695.4L170.8 264.6Z"/><path d="M287.5 205.0L512.5 205.0L595.0 287.5L595.0 672.5L512.5 755.0L287.5 755.0L205.0 672.5L205.0 287.5Z"/><path d="M150.0 0.0L287.5 205.0"/><path d="M650.0 0.0L512.5 205.0"/><path d="M800.0 150.0L595.0 287.5"/><path d="M800.0 810.0L595.0 672.5"/><path d="M650.0 960.0L512.5 755.0"/><path d="M150.0 960.0L287.5 755.0"/><path d="M0.0 810.0L205.0 672.5"/><path d="M0.0 150.0L205.0 287.5"/></svg>
+  <div class="wrap">
+    <h2 id="t-cierre">Te guardamos una mesa.</h2>
+    <p class="voz">Dinos qué te trae y a qué hora te viene bien. Te atendemos sin prisas.</p>
+    <div class="acciones">
+      <a class="btn btn-lleno chaflan" href="https://wa.me/34683153816?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20cita%20en%20la%20joyer%C3%ADa"><svg class="ico"><use href="#i-msg"/></svg>Pedir cita por WhatsApp</a>
+      <a class="btn btn-linea chaflan" href="tel:+34957472125"><svg class="ico"><use href="#i-tel"/></svg>Llamar a la joyería</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="pie">
+  <div class="wrap">
+    <div><div class="logo-b" role="img" aria-label="Luque Joyeros"></div><p>Joyería y relojería en Córdoba desde principios de los 60.</p></div>
+    <div><h3>La casa</h3><ul><li><a href="#mesa">Joyería</a></li><li><a href="#mesa">Compromiso y alianzas</a></li><li><a href="#historia">Perlas</a></li><li><a href="https://luquejoyeros.es/servicio-tecnico/">Servicio técnico</a></li></ul></div>
+    <div><h3>Relojería</h3><ul><li><a href="https://luquejoyeros.es/rolex/">Rolex</a></li><li><a href="https://luquejoyeros.es/tudor/">Tudor</a></li><li><a href="https://luquejoyeros.es/relojeria/">Otras marcas</a></li></ul></div>
+    <div><h3>Visítanos</h3><ul><li>C/ José Cruz Conde, 18 · Córdoba</li><li><a href="tel:+34957472125">957 472 125</a></li><li><a href="https://wa.me/34683153816">WhatsApp 683 153 816</a></li></ul></div>
+    <p class="legal"><span>© Luque Joyeros</span><span>Aviso legal · razón social y NIF pendientes de confirmar</span><span>Privacidad</span><span>Cookies</span><span>Espacio oficial Rolex en el pie · pendiente del material de Rolex</span></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches||!Element.prototype.animate)return;
+  var e='cubic-bezier(.22,.61,.36,1)';
+  var g=document.querySelectorAll('.talla .an');
+  g.forEach(function(n){
+    var i=+getComputedStyle(n).getPropertyValue('--i')||0;
+    var last=i>=6;
+    n.animate([{opacity:0,transform:last?'scale(.92)':'scale(1.07)'},{opacity:1,transform:'none'}],{duration:700,delay:120+i*110,easing:e,fill:'backwards'});
+  });
+  var d=document.querySelector('.talla .destello');
+  if(d){d.animate([{transform:'translateX(0)'},{transform:'translateX(1300px)'}],{duration:1400,delay:1250,easing:e,fill:'both'});}
+})();
+</script>
+</body>
+</html>
