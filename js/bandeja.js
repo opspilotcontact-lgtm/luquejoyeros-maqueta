@@ -17,7 +17,8 @@
       var d = JSON.parse(b.getAttribute('data-poner'));
       var dentro = esta(d.slug);
       b.setAttribute('aria-pressed', dentro ? 'true' : 'false');
-      b.textContent = dentro ? (b.dataset.si || 'En tu bandeja') : (b.dataset.no || 'Añadir a mi bandeja');
+      var t = b.querySelector('.t') || b;
+      t.textContent = dentro ? (b.dataset.si || 'En tu bandeja') : (b.dataset.no || 'Añadir a la bandeja');
     });
     if (!ol) return;
     ol.innerHTML = '';
@@ -96,6 +97,29 @@
   if (rx) {
     var cargar = function () { rx.src = rx.dataset.src; };
     addEventListener('load', function () { ('requestIdleCallback' in window) ? requestIdleCallback(cargar, { timeout: 3000 }) : setTimeout(cargar, 1500); });
+  }
+
+  /* la lupa de joyero: la pieza a unos 2,5 aumentos, como en la mesa */
+  var marco = document.querySelector('.producto .principal');
+  if (marco) {
+    var lupa = marco.querySelector('.lupa'), vidrio = lupa.querySelector('i') || lupa, foto = marco.querySelector('img'), ZOOM = 2.5;
+    var mover = function (ev) {
+      var r = marco.getBoundingClientRect();
+      var x = ev.clientX - r.left, y = ev.clientY - r.top;
+      if (x < 0 || y < 0 || x > r.width || y > r.height) { marco.classList.remove('mirando'); return; }
+      var lw = lupa.offsetWidth;
+      lupa.style.left = x + 'px'; lupa.style.top = y + 'px';
+      vidrio.style.backgroundImage = 'url("' + foto.currentSrc + '")';
+      vidrio.style.backgroundSize = (r.width * ZOOM) + 'px ' + (r.height * ZOOM) + 'px';
+      var vw = vidrio.offsetWidth; vidrio.style.backgroundPosition = (-(x * ZOOM - vw / 2)) + 'px ' + (-(y * ZOOM - vw / 2)) + 'px';
+      marco.classList.add('mirando');
+    };
+    marco.addEventListener('pointermove', mover);
+    marco.addEventListener('pointerdown', mover);
+    marco.addEventListener('pointerleave', function () { marco.classList.remove('mirando'); });
+    marco.addEventListener('pointerup', function (ev) { if (ev.pointerType !== 'mouse') marco.classList.remove('mirando'); });
+    var ayuda = marco.querySelector('.ayuda');
+    if (ayuda && matchMedia('(hover: none)').matches) ayuda.textContent = 'Toca y desliza para verla con la lupa';
   }
 
   /* fotos de la ficha */
